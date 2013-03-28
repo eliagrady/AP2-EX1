@@ -6,9 +6,10 @@ package model.db;
 
 public class MySqlSettings {
 	// Settings
-
-	public static final String databaseURL = "localhost";
-	public static final String databaseName = "ap2-ex1-db";
+	public static final String DRIVER = "com.mysql.jdbc.Driver";
+	public static final String databaseHost = "localhost";
+	public static final String databaseName = "ap2_ex1_db";    //Changed from ap2-ex1-db
+	public static final String databaseFullURL = "jdbc:mysql://" + databaseHost + "/" + databaseName;
 	protected static final String adminUsername = "root";
 	protected static final String adminPassword = "";
 
